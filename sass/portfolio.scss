@@ -1,0 +1,15 @@
+@import "./utils/variables";
+
+/* BASE */
+@import "./base/container";
+@import "./base/common";
+
+/* COMPONENTS */
+@import "./components/logo";
+@import "./components/social-links";
+@import "./components/title";
+
+/* LAYOUT */
+@import "./layout/header";
+@import "./layout/gallery";
+@import "./layout/footer";
