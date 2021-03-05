@@ -1,16 +1,12 @@
 .benefits {
-  //display: block;
+  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: var(--light-color);
 }
 .text-container {
   display: block;
   flex-direction: column;
-}
-.description {
-  display: block;
-  width: 270px;
-  box-sizing: border-box;
 }
 
 .description-list-link {
@@ -41,15 +37,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .benefits {
+    display: inline-flex;
+  }
   .text-container {
     display: inline-flex;
     flex-wrap: wrap;
     margin: -15px;
   }
   .description {
+    margin: -15px;
+  }
+  .description-list-link {
+    display: inline-flex;
     width: 354px;
-    margin: 15px;
-    background: var(--light-color);
   }
   .description-list-icon {
     width: 70px;

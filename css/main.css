@@ -290,6 +290,12 @@ img {
   background-color: var(--hover-focus);
 }
 
+@media screen and (min-width: 768px) {
+  .social-list {
+    justify-content: center;
+  }
+}
+
 .headline {
   font-weight: 900;
   font-size: 26px;
@@ -303,14 +309,13 @@ img {
 
 .title-benefits {
   display: block;
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--title);
-  width: 270px;
   margin-bottom: 10px;
 }
 
@@ -749,19 +754,15 @@ img {
 }
 
 .benefits {
+  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: var(--light-color);
 }
 
 .text-container {
   display: block;
   flex-direction: column;
-}
-
-.description {
-  display: block;
-  width: 270px;
-  box-sizing: border-box;
 }
 
 .description-list-link {
@@ -794,15 +795,20 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .benefits {
+    display: inline-flex;
+  }
   .text-container {
     display: inline-flex;
     flex-wrap: wrap;
     margin: -15px;
   }
   .description {
+    margin: -15px;
+  }
+  .description-list-link {
+    display: inline-flex;
     width: 354px;
-    margin: 15px;
-    background: var(--light-color);
   }
   .description-list-icon {
     width: 70px;
@@ -945,6 +951,9 @@ img {
     width: 354px;
     margin: 15px;
   }
+  .name-list {
+    padding: 30px 100px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1001,12 +1010,11 @@ img {
 }
 
 .client-list-item {
-  width: 226px;
   margin: 15px;
 }
 
 .client-list-link {
-  width: 210px;
+  width: 226px;
   height: 90px;
   background-color: var(--light-color);
   display: flex;
@@ -1036,6 +1044,7 @@ img {
   .client-list {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .client-list-item {
     width: 170px;

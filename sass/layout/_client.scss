@@ -9,14 +9,10 @@
   margin: -15px;
 }
 .client-list-item {
-  width: 226px;
   margin: 15px;
 }
-//.client-list-item:not(:last-child) {
-//  margin-right: 30px;
-//}
 .client-list-link {
-  width: 210px;
+  width: 226px;
   height: 90px;
   background-color: var(--light-color);
   display: flex;
@@ -44,6 +40,7 @@
   .client-list {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .client-list-item {
     width: 170px;
