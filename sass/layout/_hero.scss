@@ -12,7 +12,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/img/mobile-img/Header\ img.jpg");
+    url("/img/mobile-img/Header-img.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -42,12 +42,15 @@
 }
 @media screen and (min-width: 1200px) {
   .hero-container {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/img/desktop-img/Img.jpg");
+      url("/img/desktop-img/header.jpg");
   }
   .headline-top {
     display: flex;

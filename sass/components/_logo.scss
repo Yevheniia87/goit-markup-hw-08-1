@@ -41,15 +41,35 @@
 @media screen and (min-width: 768px) {
   .logotype {
     margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .logotype {
+  .logo {
+    display: block;
+    font-family: Raleway;
+    font-weight: 700;
     font-size: 26px;
-    line-height: 1.192;
+    line-height: 1.174;
+    letter-spacing: 0.03em;
+    color: var(--logo-span);
+    text-decoration: none;
     width: 145px;
-    margin-right: 93px;
+    margin-bottom: 20px;
   }
+  .logo-footer-item {
+    display: block;
+  }
+  //.logotype {
+  //  display: flex;
+  //  font-size: 26px;
+  //  line-height: 1.192;
+  //  width: 145px;
+  //  margin-right: 93px;
+  //  padding-top: 24px;
+  //  padding-bottom: 25px;
+  //}
 }
 
 //.logo-footer {

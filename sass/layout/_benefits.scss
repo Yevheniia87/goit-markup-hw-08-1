@@ -1,5 +1,4 @@
 .benefits {
-  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--light-color);
@@ -13,7 +12,6 @@
   display: flex;
   width: 450px;
   height: 120px;
-
   background-color: #f5f4fa;
   justify-content: center;
   align-items: center;
@@ -35,18 +33,18 @@
 .description:not(:last-child) {
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 768px) {
-  .benefits {
-    display: inline-flex;
-  }
   .text-container {
+    flex-direction: row;
     display: inline-flex;
     flex-wrap: wrap;
     margin: -15px;
   }
   .description {
-    margin: -15px;
+    margin: 15px;
+  }
+  .description:not(:last-child) {
+    margin-bottom: 15px;
   }
   .description-list-link {
     display: inline-flex;
@@ -55,6 +53,10 @@
   .description-list-icon {
     width: 70px;
     height: 70px;
+  }
+  .description-text {
+    display: block;
+    width: 354px;
   }
 }
 

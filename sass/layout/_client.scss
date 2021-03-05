@@ -5,14 +5,14 @@
 }
 .client-list {
   display: inline-flex;
-  flex-wrap: wrap;
   margin: -15px;
+  flex-wrap: wrap;
 }
 .client-list-item {
   margin: 15px;
 }
 .client-list-link {
-  width: 226px;
+  width: 210px;
   height: 90px;
   background-color: var(--light-color);
   display: flex;
@@ -36,17 +36,26 @@
 .client-list-link:focus .client-list-icon {
   fill: var(--btn);
 }
+@media screen and (min-width: 768px) {
+  .client-list-link {
+    width: 226px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .client-list {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
   .client-list-item {
-    width: 170px;
+    margin: 0;
   }
-  .client-list:not(:last-child) {
-    margin-right: 15px;
+  .client-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .client-list-link {
+    width: 170px;
   }
 }
 //@media screen and (min-width: 768px) {

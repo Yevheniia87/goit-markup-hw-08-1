@@ -63,6 +63,15 @@
     justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-social-block {
+    display: block;
+    margin-left: 70px;
+  }
+  .footer-social-list {
+    display: flex;
+  }
+}
 //.footer-social-list-link {
 //  width: 44px;
 //  height: 44px;
