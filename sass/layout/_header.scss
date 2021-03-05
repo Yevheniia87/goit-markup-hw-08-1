@@ -1,0 +1,302 @@
+.header {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background: var(--light-color);
+}
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+@media screen and (max-width: 767px) {
+  .navigation-list {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .burger-btn,
+  .mobile-close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  .burger-icon,
+  .close-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .mobile-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  .mobile-menu {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    max-width: 480px;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    padding: 48px 40px;
+    overflow: scroll;
+    transform: translateX(-50%) translateY(-100%);
+    background-color: var(--light-color);
+    transition: transform 500ms linear;
+  }
+  .mobile-menu.is-open {
+    transform: translateX(-50%) translateY(0%);
+  }
+  .mobile-menu-list:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobile-menu-contacts {
+    margin-top: 300px;
+  }
+  .mobile-contacts-list:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobile-menu-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--mob-modal-text);
+  }
+  .mobile-phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
+    color: var(--mob-menu-accent);
+    margin-bottom: 32px;
+  }
+  .mobile-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    color: var(--mail-tel);
+  }
+  .mobile-menu-social {
+    display: flex;
+    margin-top: 60px;
+  }
+  .mobile-social-list {
+    position: relative;
+    display: inline-flex;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+    &:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      right: -10px;
+      top: 10px;
+      height: 0;
+      width: 22px;
+
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+      margin-right: -12px;
+    }
+  }
+  .mobile-social-link {
+    font-weight: 500;
+    color: var(--mob-menu-accent);
+  }
+}
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+  .navigation-list-item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  .navigation-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: var(--logo-nav-header);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--hover-focus);
+    }
+  }
+  .contacts {
+    display: block;
+    margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .contacts-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .mail-list-icon {
+    width: 14px;
+    height: 10px;
+    fill: var(--fill-nav-icon);
+    margin-right: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .mail-link:hover &,
+    .mail-link:focus & {
+      fill: var(--hover-focus);
+    }
+  }
+  .mail-link {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    color: var(--mail-tel);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--hover-focus);
+    }
+  }
+  .tel-list-icon {
+    width: 10px;
+    height: 14px;
+    fill: var(--fill-nav-icon);
+    margin-right: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .tel-link:hover &,
+    .tel-link:focus & {
+      fill: var(--hover-focus);
+    }
+  }
+  .tel-link {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    color: var(--mail-tel);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--hover-focus);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+  .contacts-list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+//.navigation {
+//  display: flex;
+//  align-items: center;
+//  cursor: pointer;
+//}
+//.header {
+//  border-bottom: 1px solid #ececec;
+//}
+//.navigation-list {
+//  display: flex;
+//  align-items: center;
+//}
+//.navigation-list-item {
+//  &:not(:last-child) {
+//    margin-right: 50px;
+// }
+//}
+//.navigation-list-link {
+//  font-weight: 400;
+//  font-size: 14px;
+//  line-height: 1.143;
+//  letter-spacing: 0.02em;
+//  color: var(--logo-nav-header);
+//  padding-top: 32px;
+//  padding-bottom: 32px;
+//  position: relative;
+//  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//  &:hover,
+//  &:focus {
+//    color: var(--hover-focus);
+// }
+//}
+//.portfolio {
+//  color: var(--color-item-page);
+//}
+//.contacts {
+//  display: flex;
+//  margin-left: auto;
+//}
+//.mail-list-icon {
+//  width: 16px;
+//  height: 12px;
+//  fill: var(--fill-nav-icon);
+//  margin-right: 10px;
+//  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//  .mail-link:hover &,
+//  .mail-link:focus & {
+//    fill: var(--hover-focus);
+//  }
+///}
+//.mail-link {
+//  display: flex;
+//  font-weight: 400;
+// font-size: 14px;
+//  line-height: 1.143;
+//  letter-spacing: 0.02em;
+//  margin-left: auto;
+//  margin-right: 50px;
+// padding-top: 32px;
+//  padding-bottom: 32px;
+//  color: var(--mail-tel);
+// transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//  &:hover,
+//  &:focus {
+//    color: var(--hover-focus);
+//  }
+//}
+//.tel-list-icon {
+// width: 10px;
+//height: 16px;
+//  fill: var(--fill-nav-icon);
+//  margin-right: 10px;
+//  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//  .tel-link:hover &,
+//  .tel-link:focus & {
+//    fill: var(--hover-focus);
+//  }
+//}
+//.tel-link {
+//  display: flex;
+//  font-weight: 400;
+//  font-size: 14px;
+// line-height: 1.143;
+//  letter-spacing: 0.02em;
+//  padding-top: 32px;
+//  padding-bottom: 32px;
+//  color: var(--mail-tel);
+//  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//  &:hover,
+//  &:focus {
+//    color: var(--hover-focus);
+//}
