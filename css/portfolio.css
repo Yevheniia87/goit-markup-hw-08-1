@@ -268,8 +268,10 @@ svg {
 }
 
 @media screen and (min-width: 768px) {
-  .social-list {
-    justify-content: center;
+  .footer-social-block {
+    display: block;
+    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 }
 
@@ -382,6 +384,28 @@ svg {
     letter-spacing: 0.03em;
     color: var(--title);
     margin-bottom: 30px;
+  }
+  .footer-social-title {
+    display: block;
+    text-align: start;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 20px;
+  }
+  .sub-title {
+    display: block;
+    text-align: start;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 20px;
   }
 }
 
@@ -1022,8 +1046,6 @@ svg {
   .footer-container {
     display: inline-flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
   }
   .footer-social-block {
     display: block;
@@ -1048,7 +1070,14 @@ svg {
   }
   .footer-social-block {
     display: flex;
-    align-self: baseline;
+  }
+  .modal-form-sub {
+    display: block;
+    align-items: center;
+  }
+  .modal-form-input-sub {
+    display: block;
+    width: 450px;
   }
 }
 

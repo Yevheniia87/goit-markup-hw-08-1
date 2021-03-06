@@ -102,6 +102,28 @@
     color: var(--title);
     margin-bottom: 30px;
   }
+  .footer-social-title {
+    display: block;
+    text-align: start;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 20px;
+  }
+  .sub-title {
+    display: block;
+    text-align: start;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .headline {
