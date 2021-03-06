@@ -1,11 +1,11 @@
 .footer {
-  display: block;
+  //display: block;
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--dark-color);
 }
 .footer-container {
-  display: block;
+  display: flex;
 }
 .address {
   display: block;
@@ -190,6 +190,23 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-self: baseline;
+  }
+  .address {
+    display: flex;
+    text-align: start;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+  }
+  .footer-social-block {
+    display: flex;
+    align-self: baseline;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {

@@ -173,6 +173,9 @@ svg {
 }
 
 @media screen and (min-width: 768px) {
+  .logo-footer-item {
+    display: block;
+  }
   .logotype {
     margin-right: 88px;
     padding-top: 26px;
@@ -917,14 +920,13 @@ svg {
 }
 
 .footer {
-  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--dark-color);
 }
 
 .footer-container {
-  display: block;
+  display: flex;
 }
 
 .address {
@@ -1027,6 +1029,26 @@ svg {
     display: block;
     margin-left: 165px;
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-self: baseline;
+  }
+  .address {
+    display: flex;
+    text-align: start;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+  }
+  .footer-social-block {
+    display: flex;
+    align-self: baseline;
   }
 }
 
