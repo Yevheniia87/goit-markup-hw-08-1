@@ -101,6 +101,13 @@
     justify-content: space-between;
     color: var(--mob-menu-accent);
   }
+
+  .header {
+    background: var(--light-color);
+  }
+  .header {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 @media screen and (max-width: 479px) {
