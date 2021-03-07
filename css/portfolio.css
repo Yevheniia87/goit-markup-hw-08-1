@@ -685,6 +685,7 @@ svg {
     font-size: 14px;
     line-height: 1.222;
     letter-spacing: 0.02em;
+    justify-content: space-between;
     color: var(--mob-menu-accent);
   }
 }
