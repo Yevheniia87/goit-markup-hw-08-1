@@ -245,7 +245,7 @@ svg {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-list-link {
@@ -351,8 +351,8 @@ svg {
 .title-team {
   display: block;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.179;
+  font-size: 26px;
+  line-height: 1.192;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-spec);
@@ -362,12 +362,12 @@ svg {
 .client-title {
   display: block;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.179;
+  font-size: 26px;
+  line-height: 1.192;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title);
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1198,7 +1198,7 @@ svg {
 }
 
 .name-list {
-  padding: 25px 122px;
+  padding: 32px 32px;
 }
 
 .specialists {
@@ -1279,42 +1279,47 @@ svg {
   }
 }
 
-@media screen and (max-width: 479px) {
-  .client {
-    background-color: var(--light-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .client-list {
-    display: block;
-    flex-wrap: wrap;
-  }
-  .client-list-item {
-    margin-bottom: 10px;
-  }
-  .client-list-link {
-    width: 190px;
-    height: 80px;
-    background-color: var(--light-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .client-list-link:hover,
-  .client-list-link:focus {
-    border-color: var(--hover-focus);
-  }
-  .client-list-icon {
-    fill: var(--soc-fill);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .client-list-link:hover .client-list-icon,
-  .client-list-link:focus .client-list-icon {
-    fill: var(--btn);
-  }
+.client {
+  background-color: var(--light-color);
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.client-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+
+.client-list-item {
+  margin: 5px;
+}
+
+.client-list-link {
+  width: 140px;
+  height: 65px;
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+  border-color: var(--hover-focus);
+}
+
+.client-list-icon {
+  fill: var(--soc-fill);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list-link:hover .client-list-icon,
+.client-list-link:focus .client-list-icon {
+  fill: var(--btn);
 }
 
 @media screen and (min-width: 480px) {
