@@ -1111,6 +1111,10 @@ svg {
   width: 290px;
 }
 
+.description {
+  max-width: 100%;
+}
+
 .description:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -1146,6 +1150,9 @@ svg {
     letter-spacing: 0.03em;
     color: var(--text);
     width: 450px;
+  }
+  .description {
+    max-width: 100%;
   }
   .description:not(:last-child) {
     margin-bottom: 30px;
