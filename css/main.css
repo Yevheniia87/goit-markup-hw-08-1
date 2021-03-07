@@ -370,6 +370,29 @@ svg {
   margin-bottom: 8px;
 }
 
+.footer-social-title {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 480px) {
   .headline {
     font-weight: 900;
@@ -602,12 +625,52 @@ svg {
   margin-bottom: 50px;
 }*/
 /* LAYOUT */
-.header {
-  background: var(--light-color);
+.mobile-menu {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  max-width: 320px;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  overflow: scroll;
+  transform: translateX(-50%) translateY(-100%);
+  background-color: var(--light-color);
+  transition: transform 500ms linear;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
+.mobile-menu-link {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.467;
+  letter-spacing: 0.02em;
+  color: var(--mob-modal-text);
+}
+
+.mobile-phone {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.317;
+  letter-spacing: 0.02em;
+  color: var(--mob-menu-accent);
+  margin-bottom: 32px;
+}
+
+.mobile-mail {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  color: var(--mail-tel);
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    background: var(--light-color);
+  }
+  .header {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1447,8 +1510,8 @@ svg {
 }
 
 .modal-form-input-sub {
-  display: block;
-  width: 450px;
+  display: flex;
+  width: 300px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1458,6 +1521,18 @@ svg {
   background-color: var(--dark-color);
   padding: 15px 16px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form-input-sub {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-input-sub {
+    width: 350px;
+  }
 }
 
 .modal-form-sub-btn {
@@ -1486,18 +1561,11 @@ svg {
 
 @media screen and (max-width: 479px) {
   .footer-container {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: block;
+    text-align: center;
   }
   .footer-social-block {
-    display: block;
-    margin-left: 165px;
-    margin-top: 0;
-  }
-  .sub-item {
-    display: block;
-    align-items: center;
-    flex-direction: column;
+    display: flex;
   }
 }
 

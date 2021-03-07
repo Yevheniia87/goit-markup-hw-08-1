@@ -37,6 +37,27 @@
   color: var(--title);
   margin-bottom: 8px;
 }
+.footer-social-title {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  margin-bottom: 10px;
+}
+.sub-title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  margin-bottom: 10px;
+}
 
 @media screen and (min-width: 480px) {
   .headline {
