@@ -1291,10 +1291,6 @@ svg {
   padding-bottom: 45px;
 }
 
-.team-list {
-  width: 100%;
-}
-
 .prof-team {
   background: var(--prof-team);
   padding-top: 60px;
