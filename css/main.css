@@ -1422,6 +1422,7 @@ svg {
 }
 
 .client-list {
+  justify-content: center;
   display: inline-flex;
   flex-wrap: wrap;
   margin: -5px;
