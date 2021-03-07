@@ -195,7 +195,7 @@ svg {
     flex-direction: row;
   }
   .logo-footer {
-    width: auto;
+    align-items: center;
   }
 }
 
@@ -209,7 +209,6 @@ svg {
     letter-spacing: 0.03em;
     color: var(--logo-span);
     text-decoration: none;
-    width: 145px;
     align-items: flex-start;
     margin-bottom: 20px;
   }
@@ -720,7 +719,7 @@ svg {
   }
   .mobile-social-link {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.222;
     letter-spacing: 0.02em;
     justify-content: space-between;
