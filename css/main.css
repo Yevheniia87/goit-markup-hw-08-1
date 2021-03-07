@@ -795,7 +795,7 @@ svg {
   }
   .mobile-phone {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 34px;
     line-height: 1.176;
     letter-spacing: 0.02em;
     color: var(--mob-menu-accent);
@@ -1421,10 +1421,10 @@ svg {
 
 .client-list-item {
   margin: 5px;
-  width: 100%;
 }
 
 .client-list-link {
+  width: 140px;
   height: 65px;
   background-color: var(--light-color);
   display: flex;
