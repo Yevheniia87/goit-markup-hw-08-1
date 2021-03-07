@@ -720,7 +720,9 @@ svg {
   }
   .mobile-social-link {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
     color: var(--mob-menu-accent);
   }
 }
@@ -829,6 +831,9 @@ svg {
   }
   .mobile-social-link {
     font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
     color: var(--mob-menu-accent);
   }
 }
