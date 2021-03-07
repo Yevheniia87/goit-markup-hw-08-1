@@ -611,8 +611,8 @@ svg {
   }
   .mobile-menu {
     z-index: 999;
-    position: fixed;
     width: 100%;
+    position: fixed;
     max-width: 480px;
     height: 100vh;
     top: 0;
@@ -729,7 +729,7 @@ svg {
   }
   .mobile-menu {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 100%;
     max-width: 480px;
     height: 100vh;
