@@ -22,8 +22,8 @@
     right: 15px;
   }
   .mobile-menu {
-    z-index: 1;
-    position: absolute;
+    z-index: 999;
+    position: fixed;
     width: 100%;
     max-width: 480px;
     height: 100vh;
