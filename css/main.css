@@ -1161,7 +1161,6 @@ svg {
   }
   .description-list-link {
     display: flex;
-    width: 450px;
     height: 120px;
     background-color: #f5f4fa;
     justify-content: center;
@@ -1179,7 +1178,6 @@ svg {
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--text);
-    width: 450px;
   }
   .description:not(:last-child) {
     margin-bottom: 30px;
