@@ -1146,7 +1146,6 @@ svg {
   line-height: 1.571;
   letter-spacing: 0.03em;
   color: var(--text);
-  width: 290px;
 }
 
 .description:not(:last-child) {
