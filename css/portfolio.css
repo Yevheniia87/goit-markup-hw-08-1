@@ -188,7 +188,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    display: block;
+    display: flex;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -197,6 +197,7 @@ svg {
     color: var(--logo-span);
     text-decoration: none;
     width: 145px;
+    align-content: flex-start;
     margin-bottom: 20px;
   }
   .logo-footer-item {
@@ -1102,7 +1103,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .footer-container {
-    display: block;
+    display: flex;
     align-items: baseline;
   }
   .address {
@@ -1136,6 +1137,7 @@ svg {
     display: flex;
     align-items: baseline;
     margin-left: auto;
+    margin-top: 0;
   }
   .sub-item {
     display: flex;

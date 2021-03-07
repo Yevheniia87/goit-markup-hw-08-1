@@ -231,7 +231,7 @@
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
-    display: block;
+    display: flex;
     align-items: baseline;
   }
   .address {
@@ -265,6 +265,7 @@
     display: flex;
     align-items: baseline;
     margin-left: auto;
+    margin-top: 0;
   }
   .sub-item {
     display: flex;
