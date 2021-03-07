@@ -595,6 +595,7 @@ svg {
   height: 100vh;
   top: 0;
   left: 50%;
+  padding: 48px 40px;
   overflow: scroll;
   transform: translateX(-50%) translateY(-100%);
   background-color: var(--light-color);
@@ -624,6 +625,32 @@ svg {
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--mail-tel);
+}
+
+.mobile-social-link {
+  font-weight: 400;
+  color: var(--mob-menu-accent);
+}
+
+.mobile-social-list {
+  position: relative;
+  display: inline-flex;
+}
+
+.mobile-social-list:not(:first-child) {
+  margin-left: 5px;
+}
+
+.mobile-social-list:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  right: -5px;
+  top: 5px;
+  height: 0;
+  width: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-right: -7px;
 }
 
 @media screen and (min-width: 480px) {
