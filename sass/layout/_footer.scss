@@ -196,7 +196,8 @@
   .footer-container {
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .address {
     display: flex;
@@ -204,10 +205,14 @@
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    margin-bottom: 0;
+  }
+  .contacts-block:not(last-child) {
+    margin-bottom: auto;
   }
   .modal-form-sub {
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 60px;
   }
   .sub-item {
