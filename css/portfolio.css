@@ -598,7 +598,7 @@ svg {
 .mobile-menu {
   z-index: 1;
   position: absolute;
-  width: 100%;
+  width: 90%;
   max-width: 100%;
   height: 100vh;
   top: 0;
