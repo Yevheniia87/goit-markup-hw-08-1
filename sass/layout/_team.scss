@@ -1,5 +1,12 @@
 .prof-team {
   background: var(--prof-team);
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+@media screen and (max-width: 479px) {
+}
+.prof-team {
+  background: var(--prof-team);
   padding-top: 60px;
   padding-bottom: 60px;
 }

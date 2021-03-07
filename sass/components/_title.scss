@@ -1,23 +1,21 @@
 .headline {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.615;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-color);
-  min-width: 360px;
-  height: 84px;
 }
 .title-benefits {
   display: block;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
   color: var(--title);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .title-team {
   display: block;
@@ -27,18 +25,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-spec);
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
-//.title-team {
-//  display: flex;
-//  font-weight: 700;
-//  font-size: 28px;
-//  line-height: 1.179;
-//  text-align: center;
-//  letter-spacing: 0.03em;
-//  color: var(--title-spec);
-//  margin-bottom: 30px;
-//}
 .client-title {
   display: block;
   font-weight: 700;
@@ -49,26 +37,70 @@
   color: var(--title);
   margin-bottom: 30px;
 }
-.footer-social-title {
-  display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--light-color);
-  margin-bottom: 20px;
-}
-.sub-title {
-  display: block;
-  text-align: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--light-color);
-  margin-bottom: 20px;
+
+@media screen and (min-width: 480px) {
+  .headline {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    min-width: 360px;
+    height: 84px;
+  }
+  .title-benefits {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--title);
+    margin-bottom: 10px;
+  }
+  .title-team {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.179;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-spec);
+    margin-bottom: 30px;
+  }
+  .client-title {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.179;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title);
+    margin-bottom: 30px;
+  }
+  .footer-social-title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 20px;
+  }
+  .sub-title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .headline {
