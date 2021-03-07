@@ -8,6 +8,9 @@
   color: var(--logo-span);
   text-decoration: none;
   cursor: pointer;
+  margin-right: 88px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 .logo-img {
   color: var(--logo-nav-header);
@@ -41,11 +44,11 @@
 @media screen and (min-width: 768px) {
   .logo-footer-item {
     display: block;
+    align-self: center;
+    flex-direction: row;
   }
-  .logotype {
-    margin-right: 88px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+  .logo-footer {
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
