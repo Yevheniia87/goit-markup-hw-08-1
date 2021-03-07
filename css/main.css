@@ -1122,7 +1122,6 @@ svg {
 
 .description-list-link {
   display: flex;
-  width: 290px;
   height: 70px;
   background-color: #f5f4fa;
   justify-content: center;
@@ -1199,7 +1198,6 @@ svg {
   }
   .description-list-link {
     display: inline-flex;
-    width: 354px;
   }
   .description-list-icon {
     width: 70px;
@@ -1207,7 +1205,6 @@ svg {
   }
   .description-text {
     display: block;
-    width: 354px;
   }
 }
 
