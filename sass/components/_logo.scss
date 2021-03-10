@@ -33,7 +33,7 @@
   letter-spacing: 0.03em;
   color: var(--logo-span);
   text-decoration: none;
-  width: 154px;
+  //width: 154px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -43,7 +43,7 @@
 @media screen and (min-width: 768px) {
   .logo-footer-item {
     display: block;
-    align-self: center;
+    align-items: center;
     flex-direction: row;
   }
   .logo-footer {
@@ -52,7 +52,7 @@
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    display: flex;
+    display: block;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -60,10 +60,12 @@
     letter-spacing: 0.03em;
     color: var(--logo-span);
     text-decoration: none;
-    align-items: flex-start;
+    //align-items: flex-start;
+    width: 145px;
     margin-bottom: 20px;
   }
   .logo-footer-item {
     display: block;
+    width: 154px;
   }
 }
