@@ -1,4 +1,4 @@
-@media screen and (max-width: 319px) {
+@media screen and (min-width: 320px) {
   .navigation-list {
     display: none;
   }
@@ -25,11 +25,10 @@
     z-index: 999;
     width: 100%;
     position: fixed;
-    max-width: 320px;
     height: 100vh;
     top: 0;
     left: 50%;
-    padding: 20px 12px;
+    padding: 40px 48px;
     overflow: scroll;
     transform: translateX(-50%) translateY(-100%);
     background-color: var(--light-color);
@@ -49,14 +48,14 @@
   }
   .mobile-menu-link {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.175;
     letter-spacing: 0.02em;
     color: var(--mob-modal-text);
   }
   .mobile-phone {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.176;
     letter-spacing: 0.02em;
     color: var(--mob-menu-accent);
@@ -64,7 +63,7 @@
   }
   .mobile-mail {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: var(--mail-tel);
@@ -95,7 +94,7 @@
   }
   .mobile-social-link {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.222;
     letter-spacing: 0.02em;
     justify-content: space-between;
@@ -109,16 +108,13 @@
     border-bottom: 1px solid #ececec;
   }
 }
-
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .header {
     background: var(--light-color);
   }
   .header {
     border-bottom: 1px solid #ececec;
   }
-}
-@media screen and (max-width: 767px) {
   .navigation-list {
     display: none;
   }
@@ -176,7 +172,7 @@
   }
   .mobile-phone {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 34px;
     line-height: 1.176;
     letter-spacing: 0.02em;
     color: var(--mob-menu-accent);
@@ -184,7 +180,7 @@
   }
   .mobile-mail {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: var(--mail-tel);
@@ -215,7 +211,7 @@
   }
   .mobile-social-link {
     font-weight: 500;
-    font-size: 10px;
+    font-size: 18px;
     line-height: 1.222;
     letter-spacing: 0.02em;
     color: var(--mob-menu-accent);

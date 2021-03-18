@@ -52,7 +52,7 @@
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    display: block;
+    display: flex;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -60,12 +60,11 @@
     letter-spacing: 0.03em;
     color: var(--logo-span);
     text-decoration: none;
-    //align-items: flex-start;
+    align-items: flex-start;
     width: 145px;
     margin-bottom: 20px;
   }
-  .logo-footer-item {
-    display: block;
-    width: 154px;
+  .logo-footer {
+    display: flex;
   }
 }

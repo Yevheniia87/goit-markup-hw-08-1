@@ -187,7 +187,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    display: block;
+    display: flex;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -195,12 +195,12 @@ svg {
     letter-spacing: 0.03em;
     color: var(--logo-span);
     text-decoration: none;
+    align-items: flex-start;
     width: 145px;
     margin-bottom: 20px;
   }
-  .logo-footer-item {
-    display: block;
-    width: 154px;
+  .logo-footer {
+    display: flex;
   }
 }
 
@@ -282,6 +282,7 @@ svg {
   .footer-social-block {
     display: block;
     margin-left: 70px;
+    align-self: inherit;
   }
   .footer-social-list {
     display: flex;
@@ -586,7 +587,7 @@ svg {
   margin-bottom: 50px;
 }*/
 /* LAYOUT */
-@media screen and (max-width: 319px) {
+@media screen and (min-width: 320px) {
   .navigation-list {
     display: none;
   }
@@ -613,11 +614,10 @@ svg {
     z-index: 999;
     width: 100%;
     position: fixed;
-    max-width: 320px;
     height: 100vh;
     top: 0;
     left: 50%;
-    padding: 20px 12px;
+    padding: 40px 48px;
     overflow: scroll;
     transform: translateX(-50%) translateY(-100%);
     background-color: var(--light-color);
@@ -637,14 +637,14 @@ svg {
   }
   .mobile-menu-link {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.175;
     letter-spacing: 0.02em;
     color: var(--mob-modal-text);
   }
   .mobile-phone {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.176;
     letter-spacing: 0.02em;
     color: var(--mob-menu-accent);
@@ -652,7 +652,7 @@ svg {
   }
   .mobile-mail {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: var(--mail-tel);
@@ -681,7 +681,7 @@ svg {
   }
   .mobile-social-link {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.222;
     letter-spacing: 0.02em;
     justify-content: space-between;
@@ -695,16 +695,13 @@ svg {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .header {
     background: var(--light-color);
   }
   .header {
     border-bottom: 1px solid #ececec;
   }
-}
-
-@media screen and (max-width: 767px) {
   .navigation-list {
     display: none;
   }
@@ -1401,13 +1398,10 @@ svg {
     align-items: baseline;
   }
   .address {
-    display: flex;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    margin-bottom: 0;
-    margin-right: 70px;
   }
   .contacts-block:not(last-child) {
     margin-bottom: 9px;
@@ -1426,17 +1420,18 @@ svg {
   }
   .footer-social-block {
     display: block;
+    margin-left: 70px;
   }
   .modal-form-sub {
     display: block;
     align-items: baseline;
+    margin-left: auto;
     margin-left: 93px;
-    margin-top: 0;
-    margin-right: 0;
   }
   .sub-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: initial;
+    align-items: baseline;
   }
   .modal-form-input-sub {
     display: flex;
@@ -1449,7 +1444,6 @@ svg {
     color: var(--light-color);
     background-color: var(--dark-topic);
     padding: 15px 16px;
-    margin-bottom: 0;
   }
   .modal-form-input-sub:focus {
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1473,7 +1467,7 @@ svg {
     background-color: var(--btn);
     color: var(--light-color);
     cursor: pointer;
-    margin-left: 14px;
+    margin-left: 25px;
     border: none;
   }
   .modal-form-sub-btn:hover, .modal-form-sub-btn:focus {

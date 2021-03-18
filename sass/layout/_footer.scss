@@ -144,14 +144,14 @@
     align-items: baseline;
   }
   .address {
-    display: flex;
-    //text-align: start;
+    //display: flex;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    margin-bottom: 0;
-    margin-right: 70px;
+    // margin-bottom: 0;
+    // margin-right: 70px;
   }
   .contacts-block:not(last-child) {
     margin-bottom: 9px;
@@ -170,19 +170,21 @@
   }
   .footer-social-block {
     display: block;
-    //margin-left: 0;
+    margin-left: 70px;
   }
   .modal-form-sub {
     //display: flex;
     display: block;
     align-items: baseline;
+    margin-left: auto;
     margin-left: 93px;
-    margin-top: 0;
-    margin-right: 0;
+    // margin-top: 0;
+    // margin-right: 0;
   }
   .sub-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: initial;
+    align-items: baseline;
   }
   .modal-form-input-sub {
     display: flex;
@@ -195,7 +197,7 @@
     color: var(--light-color);
     background-color: var(--dark-topic);
     padding: 15px 16px;
-    margin-bottom: 0;
+    //margin-bottom: 0;
 
     &:focus {
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -221,7 +223,7 @@
     background-color: var(--btn);
     color: var(--light-color);
     cursor: pointer;
-    margin-left: 14px;
+    margin-left: 25px;
     border: none;
 
     &:hover,
